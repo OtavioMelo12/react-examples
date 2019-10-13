@@ -9,14 +9,25 @@ const Main = ({ history }) => {
   return (
     <Container background={backgroundMain}>
       <Reveal top cascade>
-        <h1>Exemplos: </h1>
-        <button
-          onClick={() => {
-            history.push("/fullscroll");
-          }}
-        >
-          FULL SCROLL
-        </button>
+        <a href="/">Exemplos: </a>
+        <div>
+          <button
+            id="scroll"
+            onClick={() => {
+              history.push("/fullscroll");
+            }}
+          >
+            FULL SCROLL
+          </button>
+          <button
+            id="cards"
+            onClick={() => {
+              history.push("/cards");
+            }}
+          >
+            CARDS
+          </button>
+        </div>
       </Reveal>
     </Container>
   );
