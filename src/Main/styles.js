@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background: #fcfeff url('${props => props.background}') no-repeat;
+  background: #4c4870;
   background-size: 100% 100%;
 
   display: flex;
@@ -13,12 +13,12 @@ export const Container = styled.div`
   padding: 40px;
 
   a {
-    color: #222;
+    color: #f4f4f4;
     font-size: 40px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
-    text-shadow: 1px 2px 1px rgba(0,0,0,0.8);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
 
     :hover {
       transform: scale(1.05);
@@ -45,8 +45,7 @@ export const Container = styled.div`
       border-radius: 10%;
       margin: 15px;
 
-
-      box-shadow: 7px 10px 10px  rgba(0,0,0);
+      box-shadow: 7px 10px 10px rgba(0, 0, 0);
 
       :hover {
         cursor: pointer;
@@ -67,8 +66,7 @@ export const Container = styled.div`
       border-radius: 10%;
       margin: 15px;
 
-
-      box-shadow: 7px 10px 10px  rgba(0,0,0);
+      box-shadow: 7px 10px 10px rgba(0, 0, 0);
 
       :hover {
         cursor: pointer;
@@ -78,7 +76,6 @@ export const Container = styled.div`
       }
     }
   }
-
 `;
 
 // 5e2075

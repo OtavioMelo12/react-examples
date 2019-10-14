@@ -4,9 +4,9 @@ export const Container = styled.div`
   height: 100%;
   height: 100%;
 
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+  /* scroll-behavior: smooth; */
+  /* scroll-snap-type: y mandatory; */
 
   ::-webkit-scrollbar {
     width: 0;
@@ -14,100 +14,9 @@ export const Container = styled.div`
   /* overflow: hidden; */
 
 
-  nav#navbar {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background: transparent;
 
-    ul {
-      display: flex;
-      width: 100%;
-      justify-content: center;
 
-      li {
-        margin: 0 1rem;
-        padding: 1rem;
 
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #fff;
-          font-weight: 1000;
-          font-size: 16px;
-
-          :hover {
-            color: #f4f4f4;
-          }
-        }
-        :hover {
-          transform: translateY(2px);
-        }
-      }
-    }
-  }
-
-  nav#vertical-nav {
-    position: fixed;
-    right: 25px;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    width: 60px;
-    height: 100%;
-    background: transparent;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      width: auto;
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      margin-right: 50px;
-
-      li {
-        margin: 1rem 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 10px;
-        position: relative;
-
-        p {
-          font-size: 0px;
-          color: #fff;
-          left: 0;
-          width: 50px;
-          margin-right: 5px;
-        }
-
-        a {
-          position: fixed;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #fff;
-          font-weight: 1000;
-          font-size: 16px;
-        }
-
-        :hover {
-          margin: 0.469rem;
-          width: 60px;
-          p {
-            font-size: 15px;
-            transform: translateX(-25px);
-          }
-          a {
-            font-size: 19px;
-          }
-        }
-      }
-    }
-  }
 
   section {
     display: flex;

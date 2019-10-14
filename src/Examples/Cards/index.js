@@ -6,7 +6,7 @@ import { Container, CardFront, CardBack } from "./styles";
 import Api from "./api";
 import bgCards from "../../assets/bgCards.jpg";
 
-const Cards = () => {
+const Cards = ({ history }) => {
   const [personagens, setPersonagens] = useState([]);
   const [inputName, setInputName] = useState("");
   const [showButton, setShowButton] = useState(true);
@@ -14,15 +14,25 @@ const Cards = () => {
   return (
     <Container background={bgCards}>
       {showButton ? (
-        <button
-          className="btn"
-          onClick={() => {
-            setPersonagens(Api);
-            setShowButton(false);
-          }}
-        >
-          Gerar 8 cards
-        </button>
+        <div className="hm">
+          <button
+            className="btn"
+            onClick={() => {
+              setPersonagens(Api);
+              setShowButton(false);
+            }}
+          >
+            Gerar 4 cards da Api
+          </button>
+          <button
+            className="btn"
+            onClick={() => {
+              history.push("/");
+            }}
+          >
+            BACK
+          </button>
+        </div>
       ) : null}
       <ul>
         {personagens.map(personagem => (
@@ -33,10 +43,10 @@ const Cards = () => {
               flipOnClick={true} // default false
               flipDirection="horizontal" // horizontal or vertical
               style={{
-                width: "200px",
-                height: "200px",
-                justifyContent: "center",
-                alignItems: "center"
+                width: "100%",
+                height: "100%",
+                boxShadow: "0",
+                transform: "translateX(10px)"
               }}
             >
               <FrontSide>
@@ -77,7 +87,17 @@ const Cards = () => {
               type="text"
               placeholder="Digite o Nome do Personagem"
             />
-            <button type="submit">Adicionar</button>
+            <div>
+              <button type="submit">Adicionar</button>
+              <button
+                onClick={() => {
+                  history.push("/");
+                }}
+                type="submit"
+              >
+                Back
+              </button>
+            </div>
           </form>
         ) : null}
       </ul>

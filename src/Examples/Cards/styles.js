@@ -13,27 +13,35 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  .btn {
-    position: fixed;
-    border: 1px solid #333;
-    height: 80px;
-    width: 400px;
-    padding: 6px;
-    font-size: 30px;
-    font-weight: bold;
-    color: #222;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 8px 8px 2px rgba(0, 0, 0,1);
+  div.hm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
 
-    z-index: 0;
+    .btn {
+      border: 1px solid #333;
+      height: 80px;
+      width: 400px;
+      padding: 6px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #222;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 5px 5px 2px rgba(0, 0, 0,1);
+      margin-top: 30px;
 
-    :hover {
-      cursor: pointer;
-      box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.9);
-      transform: translateY(-2px);
-      background-color: #ff6a0e;
-      color: #fff;
+      z-index: 0;
+
+      :hover {
+        cursor: pointer;
+        box-shadow: 7px 8px 2px rgba(0, 0, 0, 0.9);
+        transform: translateX(-2px);
+        background-color: #ff6a0e;
+        color: #fff;
+      }
     }
   }
 
@@ -84,22 +92,26 @@ export const Container = styled.div`
         margin-bottom: 5px;
         font-size: 12px;
       }
+      div {
+        display: flex;
 
-      button {
-        height: 30px;
-        width: 50%;
-        border: none;
-        border-radius: 10px;
-        color: #333;
-        font-size: 14px;
-        font-weight: bold;
-        background-color: transparent;
-        border: 1px solid #333;
+        button {
+          height: 30px;
+          width: 50%;
+          border: none;
+          border-radius: 10px;
+          color: #333;
+          font-size: 14px;
+          font-weight: bold;
+          background-color: transparent;
+          border: 1px solid #333;
+          margin: 3px;
 
-        :hover {
-          background-color: #ff6a0e;
-          cursor: pointer;
-          color: #f4f4f4;
+          :hover {
+            background-color: #ff6a0e;
+            cursor: pointer;
+            color: #f4f4f4;
+          }
         }
       }
     }

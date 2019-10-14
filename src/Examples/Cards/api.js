@@ -19,26 +19,6 @@ const exportApi = () => {
       picture: "https://api.adorable.io/avatars/285/hgftdsg3t@adorable.png",
       name: "Personagem Quatro",
       description: "Apenas um personagem"
-    },
-    {
-      picture: "https://api.adorable.io/avatars/285/gfdg565@adorable.png",
-      name: "Personagem Cinco",
-      description: "Apenas um personagem"
-    },
-    {
-      picture: "https://api.adorable.io/avatars/285/fsdg43@adorable.png",
-      name: "Personagem Seis",
-      description: "Apenas um personagem"
-    },
-    {
-      picture: "https://api.adorable.io/avatars/285/sdg45@adorable.png",
-      name: "Personagem Sete",
-      description: "Apenas um personagem"
-    },
-    {
-      picture: "https://api.adorable.io/avatars/285/hgsdfg43@adorable.png",
-      name: "Personagem Oito",
-      description: "Apenas um personagem"
     }
   ];
 };
