@@ -5,7 +5,14 @@ export const Container = styled.div`
   min-height: 100%;
   width: 100%;
   padding: 30px;
-  background: #555 url('${props => props.background}') no-repeat;
+  background: linear-gradient(
+    to right top,
+    #e78a8a,
+    #e47a79,
+    #e06968,
+    #db5856,
+    #d54545
+  );
   background-size: cover;
 
   display: flex;
@@ -30,7 +37,7 @@ export const Container = styled.div`
       color: #222;
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 5px 5px 2px rgba(0, 0, 0,1);
+      box-shadow: 5px 5px 2px rgba(0, 0, 0, 1);
       margin-top: 30px;
 
       z-index: 0;
@@ -67,7 +74,7 @@ export const Container = styled.div`
     }
 
     form {
-      background-color: #f4f4f4;;
+      background-color: #f4f4f4;
       height: 150px;
       width: 200px;
       display: flex;
@@ -116,7 +123,6 @@ export const Container = styled.div`
       }
     }
   }
-
 `;
 
 export const CardFront = styled.div`
@@ -171,7 +177,7 @@ export const CardBack = styled.div`
   height: 250px;
   width: 200px;
   padding: 20px;
-  background: #ff6a0e;
+  background: #333;
   border-radius: 5%;
 
   display: flex;
@@ -198,8 +204,8 @@ export const CardBack = styled.div`
     font-size: 12px;
     font-weight: bold;
     padding: 4px;
-    background-color: #333;
-    color: #f4f4f4;
+    background-color: #f4f4f4;
+    color: #333;
     border-radius: 10px;
     margin-top: 3px;
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);

@@ -13,11 +13,6 @@ export const Container = styled.div`
   }
   /* overflow: hidden; */
 
-
-
-
-
-
   section {
     display: flex;
     flex-direction: column;
@@ -31,10 +26,16 @@ export const Container = styled.div`
   }
 
   section#page1 {
-    background: #333 url('${props => props.background1}') no-repeat;
+    background: linear-gradient(
+      to right bottom,
+      #f2a800,
+      #f5b409,
+      #f8c014,
+      #fbcd1f,
+      #fdd929
+    );
     background-size: cover;
     div {
-      background-color: rgba(0,0,0,0.8);
       height: 100%;
       width: 100%;
       display: flex;
@@ -49,7 +50,14 @@ export const Container = styled.div`
   }
 
   section#page2 {
-    background: #555;
+    background: linear-gradient(
+      to right top,
+      #2e5e24,
+      #327f27,
+      #31a229,
+      #2ac62a,
+      #0deb2a
+    );
     background-size: cover;
 
     div {
@@ -63,22 +71,36 @@ export const Container = styled.div`
   }
 
   section#page3 {
-    background: #3465;
+    background: linear-gradient(
+      to right top,
+      #355751,
+      #3a7a70,
+      #399e91,
+      #30c4b4,
+      #0debd8
+    );
     div {
       h1 {
         font-size: 4rem;
-        color: #333;
+        color: #f4f4f4;
         margin-bottom: 10px;
       }
     }
   }
 
   section#page4 {
-    background: #c515;
+    background: linear-gradient(
+      to right top,
+      #6b4468,
+      #8c447f,
+      #af4093,
+      #d632a4,
+      #ff00b1
+    );
     div {
       h1 {
         font-size: 4rem;
-        color: #333;
+        color: #f4f4f4;
         margin-bottom: 10px;
       }
     }
