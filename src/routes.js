@@ -6,6 +6,7 @@ import GlobalStyle from "./styles/global";
 import Main from "./Main";
 import FullScroll from "./Examples/FullScroll";
 import Cards from "./Examples/Cards";
+import Animations from "./Examples/Animations";
 
 const Routes = () => (
   <BrowserRouter>
@@ -13,6 +14,7 @@ const Routes = () => (
       <Route path="/" exact component={Main} />
       <Route path="/fullscroll" component={FullScroll} />
       <Route path="/cards" component={Cards} />
+      <Route path="/animations" component={Animations} />
     </Switch>
     <GlobalStyle />
   </BrowserRouter>

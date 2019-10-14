@@ -75,6 +75,27 @@ export const Container = styled.div`
         font-size: 12px;
       }
     }
+    button#animations {
+      border: none;
+      width: 100px;
+      height: 40px;
+      background: rgba(179, 116, 204, 1);
+      color: #fcfeff;
+      padding: 3px;
+      font-weight: bold;
+      font-size: 11px;
+      border-radius: 10%;
+      margin: 15px;
+
+      box-shadow: 7px 10px 10px rgba(0, 0, 0);
+
+      :hover {
+        cursor: pointer;
+        width: 105px;
+        height: 45px;
+        font-size: 12px;
+      }
+    }
   }
 `;
 
