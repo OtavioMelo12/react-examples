@@ -14,10 +14,10 @@ const Main = ({ history }) => {
       <Particles
         params={particlesOpt}
         style={{
-          position: "fixed",
+          top: 0,
+          position: "absolute",
           width: "100%",
-          minHeight: "100%",
-          background: "$background"
+          Height: "100%"
         }}
       />
       <Reveal top cascade>
