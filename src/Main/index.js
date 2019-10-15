@@ -47,6 +47,14 @@ const Main = ({ history }) => {
           >
             ANIMATIONS
           </button>
+          <button
+            id="hooks"
+            onClick={() => {
+              history.push("/hooks");
+            }}
+          >
+            HOOKS
+          </button>
         </div>
       </Reveal>
     </Container>

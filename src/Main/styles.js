@@ -33,68 +33,38 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    button#scroll {
+    button {
       border: none;
       width: 100px;
       height: 40px;
+      color: #fcfeff;
+      padding: 3px;
+      font-weight: bold;
+      font-size: 11px;
+      border-radius: 10%;
+      margin: 15px;
+
+      box-shadow: 7px 10px 10px rgba(0, 0, 0);
+
+      :hover {
+        cursor: pointer;
+        width: 105px;
+        height: 45px;
+        font-size: 12px;
+      }
+    }
+
+    #scroll {
       background: #5e2075;
-      color: #fcfeff;
-      padding: 3px;
-      font-weight: bold;
-      font-size: 11px;
-      border-radius: 10%;
-      margin: 15px;
-
-      box-shadow: 7px 10px 10px rgba(0, 0, 0);
-
-      :hover {
-        cursor: pointer;
-        width: 105px;
-        height: 45px;
-        font-size: 12px;
-      }
     }
-    button#cards {
-      border: none;
-      width: 100px;
-      height: 40px;
+    #cards {
       background: #ff6a0e;
-      color: #fcfeff;
-      padding: 3px;
-      font-weight: bold;
-      font-size: 11px;
-      border-radius: 10%;
-      margin: 15px;
-
-      box-shadow: 7px 10px 10px rgba(0, 0, 0);
-
-      :hover {
-        cursor: pointer;
-        width: 105px;
-        height: 45px;
-        font-size: 12px;
-      }
     }
-    button#animations {
-      border: none;
-      width: 100px;
-      height: 40px;
+    #animations {
       background: rgba(179, 116, 204, 1);
-      color: #fcfeff;
-      padding: 3px;
-      font-weight: bold;
-      font-size: 11px;
-      border-radius: 10%;
-      margin: 15px;
-
-      box-shadow: 7px 10px 10px rgba(0, 0, 0);
-
-      :hover {
-        cursor: pointer;
-        width: 105px;
-        height: 45px;
-        font-size: 12px;
-      }
+    }
+    #hooks {
+      background: #31b3d3;
     }
   }
 `;
