@@ -12,11 +12,11 @@ import Hooks from "./Examples/Hooks";
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact component={Hooks} />
+      <Route path="/" exact component={Main} />
       <Route path="/fullscroll" component={FullScroll} />
       <Route path="/cards" component={Cards} />
       <Route path="/animations" component={Animations} />
-      <Route path="/hooks" component={Main} />
+      <Route path="/hooks" component={Hooks} />
     </Switch>
     <GlobalStyle />
   </BrowserRouter>
