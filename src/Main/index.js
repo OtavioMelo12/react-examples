@@ -55,6 +55,14 @@ const Main = ({ history }) => {
           >
             HOOKS
           </button>
+          <button
+            id="parallax"
+            onClick={() => {
+              history.push("/parallax");
+            }}
+          >
+            PARALLAX
+          </button>
         </div>
       </Reveal>
     </Container>

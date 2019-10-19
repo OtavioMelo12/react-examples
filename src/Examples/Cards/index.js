@@ -4,7 +4,6 @@ import Flippy, { FrontSide, BackSide } from "react-flippy";
 import { Container, CardFront, CardBack } from "./styles";
 
 import Api from "./api";
-import bgCards from "../../assets/bgCards.jpg";
 
 const Cards = ({ history }) => {
   const [personagens, setPersonagens] = useState([]);
@@ -12,7 +11,7 @@ const Cards = ({ history }) => {
   const [showButton, setShowButton] = useState(true);
 
   return (
-    <Container background={bgCards}>
+    <Container>
       {showButton ? (
         <div className="hm">
           <button

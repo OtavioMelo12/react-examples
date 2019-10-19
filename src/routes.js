@@ -8,6 +8,7 @@ import FullScroll from "./Examples/FullScroll";
 import Cards from "./Examples/Cards";
 import Animations from "./Examples/Animations";
 import Hooks from "./Examples/Hooks";
+import Parallax from "./Examples/Parallax";
 
 const Routes = () => (
   <BrowserRouter>
@@ -17,6 +18,7 @@ const Routes = () => (
       <Route path="/cards" component={Cards} />
       <Route path="/animations" component={Animations} />
       <Route path="/hooks" component={Hooks} />
+      <Route path="/parallax" component={Parallax} />
     </Switch>
     <GlobalStyle />
   </BrowserRouter>

@@ -9,16 +9,13 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px;
+  padding: 10px;
 
   a {
     color: #f4f4f4;
     font-size: 40px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
 
     :hover {
       transform: scale(1.05);
@@ -27,10 +24,9 @@ export const Container = styled.div`
   }
 
   div {
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 
     button {
@@ -65,6 +61,9 @@ export const Container = styled.div`
     }
     #hooks {
       background: #31b3d3;
+    }
+    #parallax {
+      background: #ffce1f;
     }
   }
 `;

@@ -31,6 +31,7 @@ const FullScroll = () => {
         <NavbarTop />
 
         <NavbarVertical />
+
         <section id="page1">
           <div>
             <Reveal left>
